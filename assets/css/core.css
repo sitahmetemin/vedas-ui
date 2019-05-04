@@ -1,3 +1,14 @@
+body{
+    overflow: hidden;
+}
+.wrapper{
+    overflow: hidden;
+}
+.content-fit{
+    padding-left: 0;
+    margin-left: 24.3%;
+}
+
 .bgc-main{
     background-color: #002c79;
 }
@@ -8,4 +19,20 @@
 
 .bgc-secondary{
     background-color: #5c91f7;
+}
+
+.c-white{
+    color: #ffffff;
+}
+
+.c-main{
+    color: #002c79;
+}
+
+.c-primary{
+    color: #00225e;
+}
+
+.c-secondary {
+    color: #4fc9d9;
 }
