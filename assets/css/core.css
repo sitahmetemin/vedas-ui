@@ -60,7 +60,9 @@ body{
     clear: both;
     background-color: #2d4671;
     margin-top: 5px;
-
+}
+.side-menu a {
+    color: #ffffff;
 }
 .list-header{
     color: #ffffff;
