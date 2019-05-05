@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="assets/plugin/fontawesome-5.8.1/css/all.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/css/core.css">
-
+    <!--select2-->
+    <link rel="stylesheet" href="assets/plugin/select2-4.0.3/dist/css/select2.min.css">
 
 </head>
 <body>
@@ -19,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bgc-main">
         <div class="col-md-3">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/solid-logo.png" width="150" height="30" class="d-inline-block align-top" alt="">
+                <img src="assets/img/solid-logo.png" height="30" class="d-inline-block align-top" alt="">
                 <!--        Bootstrap-->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,15 +31,9 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        Beklenilen
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
@@ -47,18 +42,31 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Atanan</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Üstleneilen</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Ulaşılan</a>
+                </li>
+                <li class="nav-item active d-flex align-items-center">
+                    <i class="fas fa-bell c-white"></i>
+                    <a class="nav-link" href="#">Bildirimler</a>
+                </li>
             </ul>
             <div class="nav-item dropdown">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-globe c-secondary"></i>
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        Harita Seçimi
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                        <input id="esri" type="radio">
+                        <label for="esri">Esri</label>
+                        <input id="google" type="radio" value="Google">
+                        <label for="google">Google</label>
                     </div>
                 </div>
             </div>
@@ -67,30 +75,219 @@
 
     <div class="row">
         <!-- Sidebar start-->
-        <div class="col-md-3 h-100 position-fixed bgc-primary">
-            <ul class="list-group">
-                <li class="list-group-item active">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+        <div class="col-md-3 h-100 position-fixed overflow-auto bgc-primary">
+            <div class="col-12">
+                <div class="list-header">
+                    <i class="fa fa-map"></i>
+                    <label>İl ve İlçeye Filtreleme</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="pb-3">
+                    <select class="form-control custom-select" name="state">
+                        <option selected>İl Seçimi</option>
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WYf">asdasda</option>
+                        <option value="WYhj">Wyomhgjghjkjing</option>
+                    </select>
+                    <!--<select class="form-control selet2" data-placeholder="İl Seçimi" name="state">-->
+                    <!--<option selected></option>-->
+                    <!--<option value="AL">Alabama</option>-->
+                    <!--<option value="WY">Wyoming</option>-->
+                    <!--<option value="WYf">asdasda</option>-->
+                    <!--<option value="WYhj">Wyomhgjghjkjing</option>-->
+                    <!--</select>-->
+                </div>
+                <div class="pb-3">
+                    <select class="form-control selet2" data-placeholder="İlçe Seçimi" name="state">
+                        <option selected></option>
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WYf">asdasda</option>
+                        <option value="WYhj">Wyomhgjghjkjing</option>
+                    </select>
+                </div>
+                <div class="pb-3">
+                    <select class="form-control selet2" data-placeholder="İş Emri Tipi Seçimi" name="state">
+                        <option selected></option>
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WYf">asdasda</option>
+                        <option value="WYhj">Wyomhgjghjkjing</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="side-menu">
+                    <li>
+                        <span>Ulaşılan arıza iş emirleri</span>
+                        <div class="float-right">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" checked class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1"></label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Üstlenien arıza iş emirleri</span>
+                        <div class="float-right">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" checked class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2"></label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Atanan arıza iş emirleri</span>
+                        <div class="float-right">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" checked class="custom-control-input" id="customSwitch3">
+                                <label class="custom-control-label" for="customSwitch3"></label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Bekleyen arıza iş emirleri</span>
+                        <div class="float-right">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                <label class="custom-control-label" for="customSwitch4"></label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Online Ekipler</span>
+                        <div class="float-right">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                                <label class="custom-control-label" for="customSwitch5"></label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Offline Ekipler</span>
+                        <div class="float-right">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" checked class="custom-control-input" id="customSwitch6">
+                                <label class="custom-control-label" for="customSwitch6"></label>
+                            </div>
+                        </div>
+                    </li>
+                    <button class="btn btn-block btn-primary">
+                        Filtrele
+                    </button>
+                </ul>
+            </div>
+            <div class="row bgc-main">
+                <div class="col-11 ml-3">
+                    <div class="list-header pt-2">
+                        <i class="fas fa-tasks"></i>
+                        <label>İş Emri Durumları</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pb-2">
+                            <button class="btn btn-success btn-block">
+                                Ulaşılan
+                                <span class="badge badge-light">49</span>
+                            </button>
+                        </div>
+                        <div class="col-6 pb-2">
+                            <button class="btn btn-info btn-block">
+                                Üstlenilen
+                                <span class="badge badge-light">49</span>
+                            </button>
+                        </div>
+                        <div class="col-6 pb-2">
+                            <button class="btn btn-warning btn-block">
+                                Atanan
+                                <span class="badge badge-light">49</span>
+                            </button>
+                        </div>
+                        <div class="col-6 pb-2">
+                            <button class="btn btn-danger btn-block">
+                                Bekleyen
+                                <span class="badge badge-light">49</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list-header">
+                        <i class="fas fa-users"></i>
+                        <label>Ekip Durumları</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pb-2">
+                            <button class="btn btn-primary btn-block">
+                                Ulaşılan
+                                <span class="badge badge-light">49</span>
+                            </button>
+                        </div>
+                        <div class="col-6 pb-2">
+                            <button class="btn btn-light btn-block">
+                                Üstlenilen
+                                <span class="badge badge-light">49</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pt-2" style="padding-bottom:100px">
+                <ul class="side-menu">
+                    <li>
+                        <i class="fa fa-paste"></i>
+                        Atama Geçmişi
+                        <div class="float-right">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-pie"></i>
+                        Aktif Veriler
+                        <div class="float-right">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line"></i>
+                        İstatistikler
+                        <div class="float-right">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
         <!-- Sidebar end-->
 
         <!--Content start-->
         <div class="col-md-9 content-fit">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.614377025458!2d28.920788415828866!3d41.07742117929394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab0e43acd2d71%3A0x9b516ee2d193092a!2zWWXFn2lscMSxbmFyIE1haGFsbGVzaSwgQ2FuYW4gU2suIE5vOjMzLCAzNDA2NSBFecO8cC_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1557000222579!5m2!1str!2str"
-                    style="width: 100%; height: 1000px;" frameborder="0" style="border:0" class=" w-100" allowfullscreen></iframe>
+                    frameborder="0" style="border:0; height: 1000px;" class="w-100" allowfullscreen></iframe>
         </div>
         <!--Content end-->
     </div>
 </div>
 
+
 <!--jquery-->
 <script src="assets/plugin/jquery-3.4.1/jquery-3.4.1.min.js"></script>
 <!--bootstrap-->
 <script src="assets/plugin/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<!--select2-->
+<script src="assets/plugin/select2-4.0.3/dist/js/select2.min.js"></script>
+
+<!--Custom js-->
+<script src="assets/js/core.js"></script>
+
+<script>
+	$(document).ready(function () {
+		$('.selet2').select2({
+			allowClear: true,
+			language: "tr"
+		});
+	});
+</script>
 
 </body>
 </html>
