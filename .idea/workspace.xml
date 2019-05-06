@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b134470d-22ff-4782-a010-78fb49d59ba9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/plugin/DataTables/tr.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/core.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,15 +17,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="513" column="40" selection-start-line="513" selection-start-column="40" selection-end-line="513" selection-end-column="40" />
+            <state relative-caret-position="645">
+              <caret line="828" column="13" selection-start-line="828" selection-start-column="13" selection-end-line="828" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#36574#36581#1" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/plugin/DataTables/tr.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="15" lean-forward="true" selection-end-line="30" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -43,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/assets/css/core.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="789">
-              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+              <caret line="147" selection-start-line="147" selection-end-line="147" />
             </state>
           </provider>
         </entry>
@@ -54,9 +64,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="CoffeeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -84,6 +94,8 @@
         <option value="$PROJECT_DIR$/assets/css/select2.css" />
         <option value="$PROJECT_DIR$/assets/js/core.js" />
         <option value="$PROJECT_DIR$/assets/css/core.css" />
+        <option value="$PROJECT_DIR$/assets/plugin/DataTables/tr.json.js" />
+        <option value="$PROJECT_DIR$/assets/plugin/DataTables/tr.json" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -156,7 +168,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -189,12 +201,12 @@
       <workItem from="1556997267848" duration="14150000" />
       <workItem from="1557012297348" duration="3951000" />
       <workItem from="1557048190274" duration="499000" />
-      <workItem from="1557121626819" duration="16346000" />
+      <workItem from="1557121626819" duration="17229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38067000" />
+    <option name="totallyTimeSpent" value="38950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -281,16 +293,24 @@
     <entry file="file://$PROJECT_DIR$/assets/css/core.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="789">
-          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/plugin/DataTables/tr.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="15" lean-forward="true" selection-end-line="30" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="513" column="40" selection-start-line="513" selection-start-column="40" selection-end-line="513" selection-end-column="40" />
+        <state relative-caret-position="645">
+          <caret line="828" column="13" selection-start-line="828" selection-start-column="13" selection-end-line="828" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
