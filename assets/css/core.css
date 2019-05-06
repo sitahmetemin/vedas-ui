@@ -1,56 +1,61 @@
-body{
+body {
     overflow: hidden;
 }
-.wrapper{
+
+.wrapper {
     overflow: hidden;
 }
-.content-fit{
+
+.content-fit {
     padding-left: 0;
     padding-right: 0;
     margin-left: 24.3%;
 }
 
-.bgc-main{
+.bgc-main {
     background-color: #002c79;
 }
 
-.bgc-primary{
+.bgc-primary {
     background-color: #00225e;
 }
 
-.bgc-secondary{
+.bgc-secondary {
     background-color: #5c91f7;
 }
 
-.c-white{
+.c-white {
     color: #ffffff;
 }
 
-.c-main{
+.c-main {
     color: #002c79;
 }
 
-.c-primary{
+.c-primary {
     color: #00225e;
 }
 
 .c-secondary {
     color: #4fc9d9;
 }
-.nav-item{
+
+.nav-item {
     padding: 10px;
 }
 
-.side-menu{
+.side-menu {
     list-style-type: none;
     color: #ffffff;
     padding: 0;
 }
+
 .side-menu > li {
     margin-bottom: 10px;
     display: block;
 }
-.side-menu > li:after{
+
+.side-menu > li:after {
     content: '';
     position: absolute;
     width: 90%;
@@ -61,35 +66,79 @@ body{
     background-color: #2d4671;
     margin-top: 5px;
 }
+
 .side-menu a {
     color: #ffffff;
 }
-.list-header{
+
+.list-header {
     color: #ffffff;
     margin: 10px;
 }
 
-.selet2{
+.selet2 {
     padding-bottom: 16px !important;
 }
-.custom-select{
+
+.custom-select {
     border: #587fc9 solid 2px;
     border-radius: 8px;
     background-color: transparent;
     color: #8393ae;
 }
 
-.custom-select:focus{
+.custom-select:focus {
     border: #587fc9 solid 2px;
     border-radius: 8px;
     background-color: transparent;
     color: #8393ae;
 }
-hr{
+
+hr {
     height: 1px;
     color: #2d4671;
     background-color: #2d4671;
     border: none;
 }
 
+.mega-dropdown:hover {
+    background-color: #f9f9f9;
+    -webkit-border-top-left-radius: 16px;
+    -webkit-border-top-right-radius: 16px;
+    -moz-border-radius-topleft: 16px;
+    -moz-border-radius-topright: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.mega-dropdown:hover .nav-link{
+    color: #0c0c0c !important;
+}
+.mega-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: 10px;
+}
 
+.mega-dropdown:hover .mega-dropdown-content {
+     display: block;
+}
+.mega-dropdown-content:hover  a {
+    display: block;
+}
+.dataTables_scrollHead > .dataTables_scrollHeadInner .table{
+    width: 100% !important;
+}
+.dataTables_scrollHead > .dataTables_scrollHeadInner{
+    width: 100% !important;
+}
+.dataTables_scrollFoot > .dataTables_scrollFootInner{
+    width: 100% !important;
+}
+.dataTables_scrollFoot > .dataTables_scrollFootInner .table{
+    width: 100% !important;
+}
