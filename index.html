@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/plugin/fontawesome-5.8.1/css/all.css">
     <!--Data tables-->
     <link rel="stylesheet" href="assets/plugin/DataTables/datatables.min.css">
+    <!-- Checkbox -->
+    <link rel="stylesheet" href="assets/plugin/el-checkbox/dist/checkbox.min.css">
 
     <!--custom css-->
     <link rel="stylesheet" href="assets/css/core.css">
@@ -596,55 +598,61 @@
                         <li>
                             <span>Ulaşılan arıza iş emirleri</span>
                             <div class="float-right">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" checked class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1"></label>
-                                </div>
+                                <span class="margin-r"></span>
+                                <label class="el-switch el-switch-green">
+                                    <input type="checkbox" name="switch" checked="">
+                                    <span class="el-switch-style"></span>
+                                </label>
                             </div>
                         </li>
                         <li>
                             <span>Üstlenien arıza iş emirleri</span>
                             <div class="float-right">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" checked class="custom-control-input" id="customSwitch2">
-                                    <label class="custom-control-label" for="customSwitch2"></label>
-                                </div>
+                                <span class="margin-r"></span>
+                                <label class="el-switch el-switch-green">
+                                    <input type="checkbox" name="switch" checked="">
+                                    <span class="el-switch-style"></span>
+                                </label>
                             </div>
                         </li>
                         <li>
                             <span>Atanan arıza iş emirleri</span>
                             <div class="float-right">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" checked class="custom-control-input" id="customSwitch3">
-                                    <label class="custom-control-label" for="customSwitch3"></label>
-                                </div>
+                                 <span class="margin-r"></span>
+                                 <label class="el-switch el-switch-green">
+                                     <input type="checkbox" name="switch" checked="">
+                                     <span class="el-switch-style"></span>
+                                 </label>
                             </div>
                         </li>
                         <li>
                             <span>Bekleyen arıza iş emirleri</span>
                             <div class="float-right">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch4">
-                                    <label class="custom-control-label" for="customSwitch4"></label>
-                                </div>
+                                 <span class="margin-r"></span>
+                                 <label class="el-switch el-switch-green">
+                                     <input type="checkbox" name="switch" >
+                                     <span class="el-switch-style"></span>
+                                 </label>
                             </div>
                         </li>
                         <li>
                             <span>Online Ekipler</span>
                             <div class="float-right">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitch5">
-                                    <label class="custom-control-label" for="customSwitch5"></label>
-                                </div>
+                                <span class="margin-r"></span>
+                                <label class="el-switch el-switch-green">
+                                    <input type="checkbox" name="switch">
+                                    <span class="el-switch-style"></span>
+                                </label>
                             </div>
                         </li>
                         <li>
                             <span>Offline Ekipler</span>
                             <div class="float-right">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" checked class="custom-control-input" id="customSwitch6">
-                                    <label class="custom-control-label" for="customSwitch6"></label>
-                                </div>
+                                <span class="margin-r"></span>
+                                <label class="el-switch el-switch-green">
+                                    <input type="checkbox" name="switch" checked>
+                                    <span class="el-switch-style"></span>
+                                </label>
                             </div>
                         </li>
                         <button class="btn btn-block btn-primary">
@@ -832,70 +840,70 @@
         });
     </script>
 
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?language=tur&amp;sensor=false"></script>
-<script type="text/javascript">
-    var map;
-    var Markers = {};
-    var infowindow;
-    var locations = [
-        [
-            'Samsung Store Madeleine',
-            '<ul class="nav nav-tabs" id="myTab" role="tablist"><li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li><li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div><div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>',
-            48.8701925,
-            2.322897600000033,
-            0
-        ],
-        [
-            'Samsung Store Velizy',
-            '<ul class="nav nav-tabs" id="myTab" role="tablist"><li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li><li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div><div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>',
-            48.78126899999999,
-            2.219588599999952,
-            1
-        ]
-    ];
-    var origin = new google.maps.LatLng(locations[0][2], locations[0][3]);
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?language=tur&amp;sensor=false"></script>
+    <script type="text/javascript">
+        var map;
+        var Markers = {};
+        var infowindow;
+        var locations = [
+            [
+                'Samsung Store Madeleine',
+                '<ul class="nav nav-tabs" id="myTab" role="tablist"><li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li><li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div><div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>',
+                48.8701925,
+                2.322897600000033,
+                0
+            ],
+            [
+                'Samsung Store Velizy',
+                '<ul class="nav nav-tabs" id="myTab" role="tablist"><li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li><li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div><div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile Profile asdf sadfasd fadsfasasdgfdsg fd gsdfgdsfgafgadfgadfgadgasdfgasdgsadgsagsagag</div>',
+                48.78126899999999,
+                2.219588599999952,
+                1
+            ]
+        ];
+        var origin = new google.maps.LatLng(locations[0][2], locations[0][3]);
 
-    function initialize() {
-        var mapOptions = {
-            zoom: 13,
-            center: origin
-        };
+        function initialize() {
+            var mapOptions = {
+                zoom: 11,
+                center: origin
+            };
 
-        map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-        infowindow = new google.maps.InfoWindow();
+            infowindow = new google.maps.InfoWindow();
 
-        for (i = 0; i < locations.length; i++) {
-            var position = new google.maps.LatLng(locations[i][2], locations[i][3]);
-            var marker = new google.maps.Marker({
-                position: position,
-                map: map,
-            });
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                return function () {
-                    infowindow.setContent(locations[i][1]);
-                    infowindow.setOptions({
-                        maxWidth: 500
-                    });
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
-            Markers[locations[i][4]] = marker;
+            for (i = 0; i < locations.length; i++) {
+                var position = new google.maps.LatLng(locations[i][2], locations[i][3]);
+                var marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                });
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][1]);
+                        infowindow.setOptions({
+                            maxWidth: 500
+                        });
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+                Markers[locations[i][4]] = marker;
+            }
+
+            locate(0);
+
         }
 
-        locate(0);
+        function locate(marker_id) {
+            var myMarker = Markers[marker_id];
+            var markerPosition = myMarker.getPosition();
+            map.setCenter(markerPosition);
+            google.maps.event.trigger(myMarker, 'click');
+        }
 
-    }
-
-    function locate(marker_id) {
-        var myMarker = Markers[marker_id];
-        var markerPosition = myMarker.getPosition();
-        map.setCenter(markerPosition);
-        google.maps.event.trigger(myMarker, 'click');
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </body>
 
