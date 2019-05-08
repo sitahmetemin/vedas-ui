@@ -800,9 +800,6 @@
         $(document).ready(function () {
             //Datatable Tetiklemesi ve ayarlamaları
             $('#example').DataTable({
-                // paging: false,
-                // scrollY: '20vh',
-                // scrollCollapse: true,
                 "pageLength": 5,
                 "lengthChange": false,
                 language: {
@@ -848,14 +845,26 @@
         var locations = [
             [
                 'Samsung Store Madeleine',
-                '<ul class="nav nav-tabs" id="myTab" role="tablist"><li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li><li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div><div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>',
+                '<div class="position-absolute bg-danger text-white text-center p-1" style="left: 0; right: 0; top: 0;"><strong>Balşlık</strong></div>' +
+                '<ul class="nav nav-tabs" id="myTab" role="tablist">' +
+                '<li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li>' +
+                '<li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li>' +
+                '</ul>' +
+                '<div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>' +
+                '<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile Profile asdf sadfasd fadsfasasdgfdsg fd gsdfgdsfgafgadfgadfgadgasdfgasdgsadgsagsagag</div>',
                 48.8701925,
                 2.322897600000033,
                 0
             ],
             [
                 'Samsung Store Velizy',
-                '<ul class="nav nav-tabs" id="myTab" role="tablist"><li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li><li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div><div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile Profile asdf sadfasd fadsfasasdgfdsg fd gsdfgdsfgafgadfgadfgadgasdfgasdgsadgsagsagag</div>',
+                '<div class="position-absolute bg-danger text-white text-center p-1" style="left: 0; right: 0; top: 0;"><strong>Balşlık</strong></div>' +
+                '<ul class="nav nav-tabs" id="myTab" role="tablist">' +
+                '<li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a></li>' +
+                '<li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a></li>' +
+                '</ul>' +
+                '<div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>' +
+                '<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile Profile asdf sadfasd fadsfasasdgfdsg fd gsdfgdsfgafgadfgadfgadgasdfgasdgsadgsagsagag</div>',
                 48.78126899999999,
                 2.219588599999952,
                 1
@@ -883,7 +892,7 @@
                     return function () {
                         infowindow.setContent(locations[i][1]);
                         infowindow.setOptions({
-                            maxWidth: 500
+                            maxWidth: 300
                         });
                         infowindow.open(map, marker);
                     }
