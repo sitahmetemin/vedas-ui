@@ -18,6 +18,7 @@ $('#sidebarClose').on('click', function () {
 $(document).ready(function () {
 
     console.log("Vedaş Projesine Hoş Geldiniz.")
-
+    //Haritanın yüksekliniği ayarlama
+    $('#map').css('height', this.documentElement.clientHeight-75);
 
 });

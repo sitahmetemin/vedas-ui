@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anasayfa</title>
     <!--bootstrap-->
     <link rel="stylesheet" href="assets/plugin/bootstrap-4.3.1/css/bootstrap.min.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="assets/plugin/fontawesome-5.8.1/css/all.css">
-    <!--select2-->
-    <link rel="stylesheet" href="assets/plugin/select2-4.0.3/dist/css/select2.min.css">
     <!--Data tables-->
     <link rel="stylesheet" href="assets/plugin/DataTables/datatables.min.css">
 
@@ -18,824 +18,898 @@
     <link rel="stylesheet" href="assets/css/core.css">
 
 </head>
+
 <body>
-<div class="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-dark bgc-main">
-        <div class="col-md-3">
-            <button id="sidebarClose" class="btn bgc-first rounded-circle mr-3 text-white btn-lg">
-                <i id="sidebarIcon" class="fa fa-times"></i>
-            </button>
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/solid-logo.png" height="30" class="d-inline-block align-top" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bgc-main">
+            <div class="col-md-3">
+                <button id="sidebarClose" class="btn bgc-first rounded-circle mr-3 text-white btn-lg">
+                    <i id="sidebarIcon" class="fa fa-times"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/solid-logo.png" height="30" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item mega-dropdown active">
-                    <a class="nav-link" href="#" role="button">
-                        <i class="fa fa-angle-down"></i>
-                        Beklenilen
-                    </a>
-                    <div class="mega-dropdown-content p-4" aria-labelledby="navbarDropdown">
-                        <div class="table-responsive">
-                            <table id="example" class="table table-hover table-striped table-bordered" style="width:100%">
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Salary</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
-                                </tr>
-                                <tr>
-                                    <td>Garrett Winters</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>63</td>
-                                    <td>2011/07/25</td>
-                                    <td>$170,750</td>
-                                </tr>
-                                <tr>
-                                    <td>Ashton Cox</td>
-                                    <td>Junior Technical Author</td>
-                                    <td>San Francisco</td>
-                                    <td>66</td>
-                                    <td>2009/01/12</td>
-                                    <td>$86,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Cedric Kelly</td>
-                                    <td>Senior Javascript Developer</td>
-                                    <td>Edinburgh</td>
-                                    <td>22</td>
-                                    <td>2012/03/29</td>
-                                    <td>$433,060</td>
-                                </tr>
-                                <tr>
-                                    <td>Airi Satou</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>33</td>
-                                    <td>2008/11/28</td>
-                                    <td>$162,700</td>
-                                </tr>
-                                <tr>
-                                    <td>Brielle Williamson</td>
-                                    <td>Integration Specialist</td>
-                                    <td>New York</td>
-                                    <td>61</td>
-                                    <td>2012/12/02</td>
-                                    <td>$372,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Herrod Chandler</td>
-                                    <td>Sales Assistant</td>
-                                    <td>San Francisco</td>
-                                    <td>59</td>
-                                    <td>2012/08/06</td>
-                                    <td>$137,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Rhona Davidson</td>
-                                    <td>Integration Specialist</td>
-                                    <td>Tokyo</td>
-                                    <td>55</td>
-                                    <td>2010/10/14</td>
-                                    <td>$327,900</td>
-                                </tr>
-                                <tr>
-                                    <td>Colleen Hurst</td>
-                                    <td>Javascript Developer</td>
-                                    <td>San Francisco</td>
-                                    <td>39</td>
-                                    <td>2009/09/15</td>
-                                    <td>$205,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Sonya Frost</td>
-                                    <td>Software Engineer</td>
-                                    <td>Edinburgh</td>
-                                    <td>23</td>
-                                    <td>2008/12/13</td>
-                                    <td>$103,600</td>
-                                </tr>
-                                <tr>
-                                    <td>Jena Gaines</td>
-                                    <td>Office Manager</td>
-                                    <td>London</td>
-                                    <td>30</td>
-                                    <td>2008/12/19</td>
-                                    <td>$90,560</td>
-                                </tr>
-                                <tr>
-                                    <td>Quinn Flynn</td>
-                                    <td>Support Lead</td>
-                                    <td>Edinburgh</td>
-                                    <td>22</td>
-                                    <td>2013/03/03</td>
-                                    <td>$342,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Charde Marshall</td>
-                                    <td>Regional Director</td>
-                                    <td>San Francisco</td>
-                                    <td>36</td>
-                                    <td>2008/10/16</td>
-                                    <td>$470,600</td>
-                                </tr>
-                                <tr>
-                                    <td>Haley Kennedy</td>
-                                    <td>Senior Marketing Designer</td>
-                                    <td>London</td>
-                                    <td>43</td>
-                                    <td>2012/12/18</td>
-                                    <td>$313,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Tatyana Fitzpatrick</td>
-                                    <td>Regional Director</td>
-                                    <td>London</td>
-                                    <td>19</td>
-                                    <td>2010/03/17</td>
-                                    <td>$385,750</td>
-                                </tr>
-                                <tr>
-                                    <td>Michael Silva</td>
-                                    <td>Marketing Designer</td>
-                                    <td>London</td>
-                                    <td>66</td>
-                                    <td>2012/11/27</td>
-                                    <td>$198,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Paul Byrd</td>
-                                    <td>Chief Financial Officer (CFO)</td>
-                                    <td>New York</td>
-                                    <td>64</td>
-                                    <td>2010/06/09</td>
-                                    <td>$725,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Gloria Little</td>
-                                    <td>Systems Administrator</td>
-                                    <td>New York</td>
-                                    <td>59</td>
-                                    <td>2009/04/10</td>
-                                    <td>$237,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Bradley Greer</td>
-                                    <td>Software Engineer</td>
-                                    <td>London</td>
-                                    <td>41</td>
-                                    <td>2012/10/13</td>
-                                    <td>$132,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Dai Rios</td>
-                                    <td>Personnel Lead</td>
-                                    <td>Edinburgh</td>
-                                    <td>35</td>
-                                    <td>2012/09/26</td>
-                                    <td>$217,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Jenette Caldwell</td>
-                                    <td>Development Lead</td>
-                                    <td>New York</td>
-                                    <td>30</td>
-                                    <td>2011/09/03</td>
-                                    <td>$345,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Yuri Berry</td>
-                                    <td>Chief Marketing Officer (CMO)</td>
-                                    <td>New York</td>
-                                    <td>40</td>
-                                    <td>2009/06/25</td>
-                                    <td>$675,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Caesar Vance</td>
-                                    <td>Pre-Sales Support</td>
-                                    <td>New York</td>
-                                    <td>21</td>
-                                    <td>2011/12/12</td>
-                                    <td>$106,450</td>
-                                </tr>
-                                <tr>
-                                    <td>Doris Wilder</td>
-                                    <td>Sales Assistant</td>
-                                    <td>Sidney</td>
-                                    <td>23</td>
-                                    <td>2010/09/20</td>
-                                    <td>$85,600</td>
-                                </tr>
-                                <tr>
-                                    <td>Angelica Ramos</td>
-                                    <td>Chief Executive Officer (CEO)</td>
-                                    <td>London</td>
-                                    <td>47</td>
-                                    <td>2009/10/09</td>
-                                    <td>$1,200,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Gavin Joyce</td>
-                                    <td>Developer</td>
-                                    <td>Edinburgh</td>
-                                    <td>42</td>
-                                    <td>2010/12/22</td>
-                                    <td>$92,575</td>
-                                </tr>
-                                <tr>
-                                    <td>Jennifer Chang</td>
-                                    <td>Regional Director</td>
-                                    <td>Singapore</td>
-                                    <td>28</td>
-                                    <td>2010/11/14</td>
-                                    <td>$357,650</td>
-                                </tr>
-                                <tr>
-                                    <td>Brenden Wagner</td>
-                                    <td>Software Engineer</td>
-                                    <td>San Francisco</td>
-                                    <td>28</td>
-                                    <td>2011/06/07</td>
-                                    <td>$206,850</td>
-                                </tr>
-                                <tr>
-                                    <td>Fiona Green</td>
-                                    <td>Chief Operating Officer (COO)</td>
-                                    <td>San Francisco</td>
-                                    <td>48</td>
-                                    <td>2010/03/11</td>
-                                    <td>$850,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Shou Itou</td>
-                                    <td>Regional Marketing</td>
-                                    <td>Tokyo</td>
-                                    <td>20</td>
-                                    <td>2011/08/14</td>
-                                    <td>$163,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Michelle House</td>
-                                    <td>Integration Specialist</td>
-                                    <td>Sidney</td>
-                                    <td>37</td>
-                                    <td>2011/06/02</td>
-                                    <td>$95,400</td>
-                                </tr>
-                                <tr>
-                                    <td>Suki Burks</td>
-                                    <td>Developer</td>
-                                    <td>London</td>
-                                    <td>53</td>
-                                    <td>2009/10/22</td>
-                                    <td>$114,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Prescott Bartlett</td>
-                                    <td>Technical Author</td>
-                                    <td>London</td>
-                                    <td>27</td>
-                                    <td>2011/05/07</td>
-                                    <td>$145,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Gavin Cortez</td>
-                                    <td>Team Leader</td>
-                                    <td>San Francisco</td>
-                                    <td>22</td>
-                                    <td>2008/10/26</td>
-                                    <td>$235,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Martena Mccray</td>
-                                    <td>Post-Sales support</td>
-                                    <td>Edinburgh</td>
-                                    <td>46</td>
-                                    <td>2011/03/09</td>
-                                    <td>$324,050</td>
-                                </tr>
-                                <tr>
-                                    <td>Unity Butler</td>
-                                    <td>Marketing Designer</td>
-                                    <td>San Francisco</td>
-                                    <td>47</td>
-                                    <td>2009/12/09</td>
-                                    <td>$85,675</td>
-                                </tr>
-                                <tr>
-                                    <td>Howard Hatfield</td>
-                                    <td>Office Manager</td>
-                                    <td>San Francisco</td>
-                                    <td>51</td>
-                                    <td>2008/12/16</td>
-                                    <td>$164,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Hope Fuentes</td>
-                                    <td>Secretary</td>
-                                    <td>San Francisco</td>
-                                    <td>41</td>
-                                    <td>2010/02/12</td>
-                                    <td>$109,850</td>
-                                </tr>
-                                <tr>
-                                    <td>Vivian Harrell</td>
-                                    <td>Financial Controller</td>
-                                    <td>San Francisco</td>
-                                    <td>62</td>
-                                    <td>2009/02/14</td>
-                                    <td>$452,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Timothy Mooney</td>
-                                    <td>Office Manager</td>
-                                    <td>London</td>
-                                    <td>37</td>
-                                    <td>2008/12/11</td>
-                                    <td>$136,200</td>
-                                </tr>
-                                <tr>
-                                    <td>Jackson Bradshaw</td>
-                                    <td>Director</td>
-                                    <td>New York</td>
-                                    <td>65</td>
-                                    <td>2008/09/26</td>
-                                    <td>$645,750</td>
-                                </tr>
-                                <tr>
-                                    <td>Olivia Liang</td>
-                                    <td>Support Engineer</td>
-                                    <td>Singapore</td>
-                                    <td>64</td>
-                                    <td>2011/02/03</td>
-                                    <td>$234,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Bruno Nash</td>
-                                    <td>Software Engineer</td>
-                                    <td>London</td>
-                                    <td>38</td>
-                                    <td>2011/05/03</td>
-                                    <td>$163,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Sakura Yamamoto</td>
-                                    <td>Support Engineer</td>
-                                    <td>Tokyo</td>
-                                    <td>37</td>
-                                    <td>2009/08/19</td>
-                                    <td>$139,575</td>
-                                </tr>
-                                <tr>
-                                    <td>Thor Walton</td>
-                                    <td>Developer</td>
-                                    <td>New York</td>
-                                    <td>61</td>
-                                    <td>2013/08/11</td>
-                                    <td>$98,540</td>
-                                </tr>
-                                <tr>
-                                    <td>Finn Camacho</td>
-                                    <td>Support Engineer</td>
-                                    <td>San Francisco</td>
-                                    <td>47</td>
-                                    <td>2009/07/07</td>
-                                    <td>$87,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Serge Baldwin</td>
-                                    <td>Data Coordinator</td>
-                                    <td>Singapore</td>
-                                    <td>64</td>
-                                    <td>2012/04/09</td>
-                                    <td>$138,575</td>
-                                </tr>
-                                <tr>
-                                    <td>Zenaida Frank</td>
-                                    <td>Software Engineer</td>
-                                    <td>New York</td>
-                                    <td>63</td>
-                                    <td>2010/01/04</td>
-                                    <td>$125,250</td>
-                                </tr>
-                                <tr>
-                                    <td>Zorita Serrano</td>
-                                    <td>Software Engineer</td>
-                                    <td>San Francisco</td>
-                                    <td>56</td>
-                                    <td>2012/06/01</td>
-                                    <td>$115,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Jennifer Acosta</td>
-                                    <td>Junior Javascript Developer</td>
-                                    <td>Edinburgh</td>
-                                    <td>43</td>
-                                    <td>2013/02/01</td>
-                                    <td>$75,650</td>
-                                </tr>
-                                <tr>
-                                    <td>Cara Stevens</td>
-                                    <td>Sales Assistant</td>
-                                    <td>New York</td>
-                                    <td>46</td>
-                                    <td>2011/12/06</td>
-                                    <td>$145,600</td>
-                                </tr>
-                                <tr>
-                                    <td>Hermione Butler</td>
-                                    <td>Regional Director</td>
-                                    <td>London</td>
-                                    <td>47</td>
-                                    <td>2011/03/21</td>
-                                    <td>$356,250</td>
-                                </tr>
-                                <tr>
-                                    <td>Lael Greer</td>
-                                    <td>Systems Administrator</td>
-                                    <td>London</td>
-                                    <td>21</td>
-                                    <td>2009/02/27</td>
-                                    <td>$103,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Jonas Alexander</td>
-                                    <td>Developer</td>
-                                    <td>San Francisco</td>
-                                    <td>30</td>
-                                    <td>2010/07/14</td>
-                                    <td>$86,500</td>
-                                </tr>
-                                <tr>
-                                    <td>Shad Decker</td>
-                                    <td>Regional Director</td>
-                                    <td>Edinburgh</td>
-                                    <td>51</td>
-                                    <td>2008/11/13</td>
-                                    <td>$183,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Michael Bruce</td>
-                                    <td>Javascript Developer</td>
-                                    <td>Singapore</td>
-                                    <td>29</td>
-                                    <td>2011/06/27</td>
-                                    <td>$183,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Donna Snider</td>
-                                    <td>Customer Support</td>
-                                    <td>New York</td>
-                                    <td>27</td>
-                                    <td>2011/01/25</td>
-                                    <td>$112,000</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Atanan</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Üstleneilen</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Ulaşılan</a>
-                </li>
-                <li class="nav-item active d-flex align-items-center">
-                    <i class="fas fa-bell c-white"></i>
-                    <a class="nav-link" href="#">Bildirimler</a>
-                </li>
-            </ul>
-            <div class="nav-item dropdown">
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-globe c-secondary"></i>
-                    <a class="nav-link dropdown-toggle c-secondary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Harita Seçimi
-                    </a>
-                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                        <form action="">
-                            <input id="esri" type="radio" name="map">
-                            <label for="esri">Esri</label>
-                            <input id="google" type="radio" value="Google" name="map" checked>
-                            <label for="google">Google</label>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="row">
-        <!-- Sidebar start-->
-        <div id="sidebar" class="col-md-3 h-100 position-fixed overflow-auto bgc-primary">
-            <div class="col-12">
-                <div class="list-header">
-                    <i class="fa fa-map"></i>
-                    <label>İl ve İlçeye Filtreleme</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="pb-3">
-                    <select class="form-control custom-select" name="state">
-                        <option selected>İl Seçimi</option>
-                        <option value="AL">Alabama</option>
-                        <option value="WY">Wyoming</option>
-                        <option value="WYf">asdasda</option>
-                        <option value="WYhj">Wyomhgjghjkjing</option>
-                    </select>
-                    <!--<select class="form-control selet2" data-placeholder="İl Seçimi" name="state">-->
-                    <!--<option selected></option>-->
-                    <!--<option value="AL">Alabama</option>-->
-                    <!--<option value="WY">Wyoming</option>-->
-                    <!--<option value="WYf">asdasda</option>-->
-                    <!--<option value="WYhj">Wyomhgjghjkjing</option>-->
-                    <!--</select>-->
-                </div>
-                <div class="pb-3">
-                    <select class="form-control selet2" data-placeholder="İlçe Seçimi" name="state">
-                        <option selected></option>
-                        <option value="AL">Alabama</option>
-                        <option value="WY">Wyoming</option>
-                        <option value="WYf">asdasda</option>
-                        <option value="WYhj">Wyomhgjghjkjing</option>
-                    </select>
-                </div>
-                <div class="pb-3">
-                    <select class="form-control selet2" data-placeholder="İş Emri Tipi Seçimi" name="state">
-                        <option selected></option>
-                        <option value="AL">Alabama</option>
-                        <option value="WY">Wyoming</option>
-                        <option value="WYf">asdasda</option>
-                        <option value="WYhj">Wyomhgjghjkjing</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-12">
-                <ul class="side-menu">
-                    <li>
-                        <span>Ulaşılan arıza iş emirleri</span>
-                        <div class="float-right">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" checked class="custom-control-input" id="customSwitch1">
-                                <label class="custom-control-label" for="customSwitch1"></label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>Üstlenien arıza iş emirleri</span>
-                        <div class="float-right">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" checked class="custom-control-input" id="customSwitch2">
-                                <label class="custom-control-label" for="customSwitch2"></label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>Atanan arıza iş emirleri</span>
-                        <div class="float-right">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" checked class="custom-control-input" id="customSwitch3">
-                                <label class="custom-control-label" for="customSwitch3"></label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>Bekleyen arıza iş emirleri</span>
-                        <div class="float-right">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch4">
-                                <label class="custom-control-label" for="customSwitch4"></label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>Online Ekipler</span>
-                        <div class="float-right">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch5">
-                                <label class="custom-control-label" for="customSwitch5"></label>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>Offline Ekipler</span>
-                        <div class="float-right">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" checked class="custom-control-input" id="customSwitch6">
-                                <label class="custom-control-label" for="customSwitch6"></label>
-                            </div>
-                        </div>
-                    </li>
-                    <button class="btn btn-block btn-primary">
-                        Filtrele
-                    </button>
-                </ul>
-            </div>
-            <div class="row bgc-main">
-                <div class="col-11 ml-3">
-                    <div class="list-header pt-2">
-                        <i class="fas fa-tasks"></i>
-                        <label>İş Emri Durumları</label>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 pb-2">
-                            <button class="btn btn-success btn-block" data-toggle="modal" data-target="#exampleModal">
-                                Ulaşılan
-                                <span class="badge badge-light">49</span>
-                            </button>
-                        </div>
-                        <div class="col-6 pb-2">
-                            <button class="btn btn-info btn-block">
-                                Üstlenilen
-                                <span class="badge badge-light">49</span>
-                            </button>
-                        </div>
-                        <div class="col-6 pb-2">
-                            <button class="btn btn-warning btn-block">
-                                Atanan
-                                <span class="badge badge-light">49</span>
-                            </button>
-                        </div>
-                        <div class="col-6 pb-2">
-                            <button class="btn btn-danger btn-block">
-                                Bekleyen
-                                <span class="badge badge-light">49</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="list-header">
-                        <i class="fas fa-users"></i>
-                        <label>Ekip Durumları</label>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 pb-2">
-                            <button class="btn btn-primary btn-block">
-                                Ulaşılan
-                                <span class="badge badge-light">49</span>
-                            </button>
-                        </div>
-                        <div class="col-6 pb-2">
-                            <button class="btn btn-secondary btn-block">
-                                Üstlenilen
-                                <span class="badge badge-light">49</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 pt-2" style="padding-bottom:100px">
-                <ul class="side-menu">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-paste"></i>
-                            Atama Geçmişi
-                            <div class="float-right">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-chart-pie"></i>
-                            Aktif Veriler
-                            <div class="float-right">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-chart-line"></i>
-                            İstatistikler
-                            <div class="float-right">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-        <!-- Sidebar end-->
-
-        <!--Content start-->
-        <div id="content" class="col-md-9 content-fit">
-            <!--Harita-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.614377025458!2d28.920788415828866!3d41.07742117929394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab0e43acd2d71%3A0x9b516ee2d193092a!2zWWXFn2lscMSxbmFyIE1haGFsbGVzaSwgQ2FuYW4gU2suIE5vOjMzLCAzNDA2NSBFecO8cC_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1557000222579!5m2!1str!2str"
-                    frameborder="0" style="border:0; height: 1000px;" class="w-100" allowfullscreen></iframe>
-        </div>
-        <!--Content end-->
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">İş Emri Bilgileri</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="modal-body">
-                İçerikler Buraya Dolacak
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mega-dropdown active">
+                        <a class="nav-link" href="#" role="button">
+                            <i class="fa fa-angle-down"></i>
+                            Beklenilen
+                        </a>
+                        <div class="mega-dropdown-content p-4" aria-labelledby="navbarDropdown">
+                            <div class="table-responsive">
+                                <table id="example" class="table table-hover table-striped table-bordered"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>63</td>
+                                            <td>2011/07/25</td>
+                                            <td>$170,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29</td>
+                                            <td>$433,060</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td>2008/11/28</td>
+                                            <td>$162,700</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012/12/02</td>
+                                            <td>$372,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Herrod Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>San Francisco</td>
+                                            <td>59</td>
+                                            <td>2012/08/06</td>
+                                            <td>$137,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rhona Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Tokyo</td>
+                                            <td>55</td>
+                                            <td>2010/10/14</td>
+                                            <td>$327,900</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>2009/09/15</td>
+                                            <td>$205,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sonya Frost</td>
+                                            <td>Software Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>2008/12/13</td>
+                                            <td>$103,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jena Gaines</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>2008/12/19</td>
+                                            <td>$90,560</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quinn Flynn</td>
+                                            <td>Support Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2013/03/03</td>
+                                            <td>$342,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charde Marshall</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td>36</td>
+                                            <td>2008/10/16</td>
+                                            <td>$470,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Haley Kennedy</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>43</td>
+                                            <td>2012/12/18</td>
+                                            <td>$313,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tatyana Fitzpatrick</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>19</td>
+                                            <td>2010/03/17</td>
+                                            <td>$385,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Silva</td>
+                                            <td>Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>66</td>
+                                            <td>2012/11/27</td>
+                                            <td>$198,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paul Byrd</td>
+                                            <td>Chief Financial Officer (CFO)</td>
+                                            <td>New York</td>
+                                            <td>64</td>
+                                            <td>2010/06/09</td>
+                                            <td>$725,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloria Little</td>
+                                            <td>Systems Administrator</td>
+                                            <td>New York</td>
+                                            <td>59</td>
+                                            <td>2009/04/10</td>
+                                            <td>$237,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>41</td>
+                                            <td>2012/10/13</td>
+                                            <td>$132,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dai Rios</td>
+                                            <td>Personnel Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>35</td>
+                                            <td>2012/09/26</td>
+                                            <td>$217,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jenette Caldwell</td>
+                                            <td>Development Lead</td>
+                                            <td>New York</td>
+                                            <td>30</td>
+                                            <td>2011/09/03</td>
+                                            <td>$345,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yuri Berry</td>
+                                            <td>Chief Marketing Officer (CMO)</td>
+                                            <td>New York</td>
+                                            <td>40</td>
+                                            <td>2009/06/25</td>
+                                            <td>$675,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Caesar Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td>21</td>
+                                            <td>2011/12/12</td>
+                                            <td>$106,450</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Doris Wilder</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Sidney</td>
+                                            <td>23</td>
+                                            <td>2010/09/20</td>
+                                            <td>$85,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Angelica Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2009/10/09</td>
+                                            <td>$1,200,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin Joyce</td>
+                                            <td>Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>42</td>
+                                            <td>2010/12/22</td>
+                                            <td>$92,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Chang</td>
+                                            <td>Regional Director</td>
+                                            <td>Singapore</td>
+                                            <td>28</td>
+                                            <td>2010/11/14</td>
+                                            <td>$357,650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>28</td>
+                                            <td>2011/06/07</td>
+                                            <td>$206,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fiona Green</td>
+                                            <td>Chief Operating Officer (COO)</td>
+                                            <td>San Francisco</td>
+                                            <td>48</td>
+                                            <td>2010/03/11</td>
+                                            <td>$850,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shou Itou</td>
+                                            <td>Regional Marketing</td>
+                                            <td>Tokyo</td>
+                                            <td>20</td>
+                                            <td>2011/08/14</td>
+                                            <td>$163,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michelle House</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Sidney</td>
+                                            <td>37</td>
+                                            <td>2011/06/02</td>
+                                            <td>$95,400</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suki Burks</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td>53</td>
+                                            <td>2009/10/22</td>
+                                            <td>$114,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prescott Bartlett</td>
+                                            <td>Technical Author</td>
+                                            <td>London</td>
+                                            <td>27</td>
+                                            <td>2011/05/07</td>
+                                            <td>$145,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin Cortez</td>
+                                            <td>Team Leader</td>
+                                            <td>San Francisco</td>
+                                            <td>22</td>
+                                            <td>2008/10/26</td>
+                                            <td>$235,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Martena Mccray</td>
+                                            <td>Post-Sales support</td>
+                                            <td>Edinburgh</td>
+                                            <td>46</td>
+                                            <td>2011/03/09</td>
+                                            <td>$324,050</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Unity Butler</td>
+                                            <td>Marketing Designer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/12/09</td>
+                                            <td>$85,675</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Howard Hatfield</td>
+                                            <td>Office Manager</td>
+                                            <td>San Francisco</td>
+                                            <td>51</td>
+                                            <td>2008/12/16</td>
+                                            <td>$164,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hope Fuentes</td>
+                                            <td>Secretary</td>
+                                            <td>San Francisco</td>
+                                            <td>41</td>
+                                            <td>2010/02/12</td>
+                                            <td>$109,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vivian Harrell</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td>62</td>
+                                            <td>2009/02/14</td>
+                                            <td>$452,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Timothy Mooney</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>37</td>
+                                            <td>2008/12/11</td>
+                                            <td>$136,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jackson Bradshaw</td>
+                                            <td>Director</td>
+                                            <td>New York</td>
+                                            <td>65</td>
+                                            <td>2008/09/26</td>
+                                            <td>$645,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Olivia Liang</td>
+                                            <td>Support Engineer</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2011/02/03</td>
+                                            <td>$234,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>38</td>
+                                            <td>2011/05/03</td>
+                                            <td>$163,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sakura Yamamoto</td>
+                                            <td>Support Engineer</td>
+                                            <td>Tokyo</td>
+                                            <td>37</td>
+                                            <td>2009/08/19</td>
+                                            <td>$139,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thor Walton</td>
+                                            <td>Developer</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2013/08/11</td>
+                                            <td>$98,540</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Finn Camacho</td>
+                                            <td>Support Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/07/07</td>
+                                            <td>$87,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Serge Baldwin</td>
+                                            <td>Data Coordinator</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2012/04/09</td>
+                                            <td>$138,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zenaida Frank</td>
+                                            <td>Software Engineer</td>
+                                            <td>New York</td>
+                                            <td>63</td>
+                                            <td>2010/01/04</td>
+                                            <td>$125,250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zorita Serrano</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>56</td>
+                                            <td>2012/06/01</td>
+                                            <td>$115,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Acosta</td>
+                                            <td>Junior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>43</td>
+                                            <td>2013/02/01</td>
+                                            <td>$75,650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>46</td>
+                                            <td>2011/12/06</td>
+                                            <td>$145,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hermione Butler</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2011/03/21</td>
+                                            <td>$356,250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lael Greer</td>
+                                            <td>Systems Administrator</td>
+                                            <td>London</td>
+                                            <td>21</td>
+                                            <td>2009/02/27</td>
+                                            <td>$103,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>30</td>
+                                            <td>2010/07/14</td>
+                                            <td>$86,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>51</td>
+                                            <td>2008/11/13</td>
+                                            <td>$183,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>2011/06/27</td>
+                                            <td>$183,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td>27</td>
+                                            <td>2011/01/25</td>
+                                            <td>$112,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Atanan</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Üstleneilen</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Ulaşılan</a>
+                    </li>
+                    <li class="nav-item active d-flex align-items-center">
+                        <i class="fas fa-bell c-white"></i>
+                        <a class="nav-link" href="#">Bildirimler</a>
+                    </li>
+                </ul>
+                <div class="nav-item dropdown">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-globe c-secondary"></i>
+                        <a class="nav-link dropdown-toggle c-secondary" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Harita Seçimi
+                        </a>
+                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                            <form action="">
+                                <input id="esri" type="radio" name="map">
+                                <label for="esri">Esri</label>
+                                <input id="google" type="radio" value="Google" name="map" checked>
+                                <label for="google">Google</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
-                <button type="button" class="btn btn-success">Kaydet</button>
+        </nav>
+
+        <div class="row">
+            <!-- Sidebar start-->
+            <div id="sidebar" class="col-md-3 h-100 position-fixed overflow-auto bgc-primary">
+                <div class="col-12">
+                    <div class="list-header">
+                        <i class="fa fa-map"></i>
+                        <label>İl ve İlçeye Filtreleme</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="pb-3">
+                        <select class="form-control custom-select" name="state">
+                            <option selected>İl Seçimi</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="WYf">asdasda</option>
+                            <option value="WYhj">Wyomhgjghjkjing</option>
+                        </select>
+                    </div>
+                    <div class="pb-3">
+                        <select class="form-control custom-select" name="state">
+                            <option selected>İlçe Seçimi</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="WYf">asdasda</option>
+                            <option value="WYhj">Wyomhgjghjkjing</option>
+                        </select>
+                    </div>
+                    <div class="pb-3">
+                        <select class="form-control custom-select" name="state">
+                            <option selected>İş Emri Tipi Seçimi</option>
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="WYf">asdasda</option>
+                            <option value="WYhj">Wyomhgjghjkjing</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <ul class="side-menu">
+                        <li>
+                            <span>Ulaşılan arıza iş emirleri</span>
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" checked class="custom-control-input"
+                                        id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Üstlenien arıza iş emirleri</span>
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" checked class="custom-control-input" id="customSwitch2">
+                                    <label class="custom-control-label" for="customSwitch2"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Atanan arıza iş emirleri</span>
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" checked class="custom-control-input" id="customSwitch3">
+                                    <label class="custom-control-label" for="customSwitch3"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Bekleyen arıza iş emirleri</span>
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                    <label class="custom-control-label" for="customSwitch4"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Online Ekipler</span>
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                                    <label class="custom-control-label" for="customSwitch5"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Offline Ekipler</span>
+                            <div class="float-right">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" checked class="custom-control-input" id="customSwitch6">
+                                    <label class="custom-control-label" for="customSwitch6"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <button class="btn btn-block btn-primary">
+                            Filtrele
+                        </button>
+                    </ul>
+                </div>
+                <div class="row bgc-main">
+                    <div class="col-11 ml-3">
+                        <div class="list-header pt-2">
+                            <i class="fas fa-tasks"></i>
+                            <label>İş Emri Durumları</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 pb-2">
+                                <button class="btn btn-success btn-block" data-toggle="modal"
+                                    data-target="#exampleModal">
+                                    Ulaşılan
+                                    <span class="badge badge-light">49</span>
+                                </button>
+                            </div>
+                            <div class="col-6 pb-2">
+                                <button class="btn btn-info btn-block">
+                                    Üstlenilen
+                                    <span class="badge badge-light">49</span>
+                                </button>
+                            </div>
+                            <div class="col-6 pb-2">
+                                <button class="btn btn-warning btn-block">
+                                    Atanan
+                                    <span class="badge badge-light">49</span>
+                                </button>
+                            </div>
+                            <div class="col-6 pb-2">
+                                <button class="btn btn-danger btn-block">
+                                    Bekleyen
+                                    <span class="badge badge-light">49</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list-header">
+                            <i class="fas fa-users"></i>
+                            <label>Ekip Durumları</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 pb-2">
+                                <button class="btn btn-primary btn-block">
+                                    Ulaşılan
+                                    <span class="badge badge-light">49</span>
+                                </button>
+                            </div>
+                            <div class="col-6 pb-2">
+                                <button class="btn btn-secondary btn-block">
+                                    Üstlenilen
+                                    <span class="badge badge-light">49</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-2" style="padding-bottom:100px">
+                    <ul class="side-menu">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-paste"></i>
+                                Atama Geçmişi
+                                <div class="float-right">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chart-pie"></i>
+                                Aktif Veriler
+                                <div class="float-right">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chart-line"></i>
+                                İstatistikler
+                                <div class="float-right">
+                                    <i class="fa fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Sidebar end-->
+
+            <!--Content start-->
+            <div id="content" class="col-md-9 content-fit">
+                <!--Harita-->
+                <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.614377025458!2d28.920788415828866!3d41.07742117929394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab0e43acd2d71%3A0x9b516ee2d193092a!2zWWXFn2lscMSxbmFyIE1haGFsbGVzaSwgQ2FuYW4gU2suIE5vOjMzLCAzNDA2NSBFecO8cC_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1557000222579!5m2!1str!2str"
+                    frameborder="0" style="border:0; height: 1000px;" class="w-100" allowfullscreen></iframe>-->
+
+                <!--Harita script section-->
+                <div id="map"></div>
+            </div>
+            <!--Content end-->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">İş Emri Bilgileri</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    İçerikler Buraya Dolacak
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-success">Kaydet</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<!--jquery-->
-<script src="assets/plugin/jquery-3.4.1/jquery-3.4.1.min.js"></script>
-<!--bootstrap-->
-<script src="assets/plugin/bootstrap-4.3.1/js/bootstrap.min.js"></script>
-<!--select2-->
-<script src="assets/plugin/select2-4.0.3/dist/js/select2.min.js"></script>
-<!--Data tables-->
-<script src="assets/plugin/DataTables/datatables.min.js"></script>
+    <!--jquery-->
+    <script src="assets/plugin/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <!--bootstrap-->
+    <script src="assets/plugin/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Data tables-->
+    <script src="assets/plugin/DataTables/datatables.min.js"></script>
 
 
-<!--Custom js-->
-<script src="assets/js/core.js"></script>
+    <!--Custom js-->
+    <script src="assets/js/core.js"></script>
 
-<script>
-    $(document).ready(function () {
-        //Datatable Tetiklemesi ve ayarlamaları
-        $('#example').DataTable({
-            // paging: false,
-            // scrollY: '20vh',
-            // scrollCollapse: true,
-            "pageLength": 5,
-            "lengthChange": false,
-            language: {
-                "sDecimal": ",",
-                "sEmptyTable": "Tabloda herhangi bir veri mevcut değil",
-                "sInfo": "_TOTAL_ kayıttan _START_ - _END_ arasındaki kayıtlar gösteriliyor",
-                "sInfoEmpty": "Kayıt yok",
-                "sInfoFiltered": "(_MAX_ kayıt içerisinden bulunan)",
-                "sInfoPostFix": "",
-                "sInfoThousands": ".",
-                "sLengthMenu": "Sayfada _MENU_ kayıt göster",
-                "sLoadingRecords": "Yükleniyor...",
-                "sProcessing": "İşleniyor...",
-                "sSearch": "Ara:",
-                "sZeroRecords": "Eşleşen kayıt bulunamadı",
-                "oPaginate": {
-                    "sFirst": "İlk",
-                    "sLast": "Son",
-                    "sNext": "Sonraki",
-                    "sPrevious": "Önceki"
-                },
-                "oAria": {
-                    "sSortAscending": ": artan sütun sıralamasını aktifleştir",
-                    "sSortDescending": ": azalan sütun sıralamasını aktifleştir"
-                },
-                "select": {
-                    "rows": {
-                        "_": "%d kayıt seçildi",
-                        "0": "",
-                        "1": "1 kayıt seçildi"
+    <script>
+        $(document).ready(function () {
+            //Datatable Tetiklemesi ve ayarlamaları
+            $('#example').DataTable({
+                // paging: false,
+                // scrollY: '20vh',
+                // scrollCollapse: true,
+                "pageLength": 5,
+                "lengthChange": false,
+                language: {
+                    "sDecimal": ",",
+                    "sEmptyTable": "Tabloda herhangi bir veri mevcut değil",
+                    "sInfo": "_TOTAL_ kayıttan _START_ - _END_ arasındaki kayıtlar gösteriliyor",
+                    "sInfoEmpty": "Kayıt yok",
+                    "sInfoFiltered": "(_MAX_ kayıt içerisinden bulunan)",
+                    "sInfoPostFix": "",
+                    "sInfoThousands": ".",
+                    "sLengthMenu": "Sayfada _MENU_ kayıt göster",
+                    "sLoadingRecords": "Yükleniyor...",
+                    "sProcessing": "İşleniyor...",
+                    "sSearch": "Ara:",
+                    "sZeroRecords": "Eşleşen kayıt bulunamadı",
+                    "oPaginate": {
+                        "sFirst": "İlk",
+                        "sLast": "Son",
+                        "sNext": "Sonraki",
+                        "sPrevious": "Önceki"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": artan sütun sıralamasını aktifleştir",
+                        "sSortDescending": ": azalan sütun sıralamasını aktifleştir"
+                    },
+                    "select": {
+                        "rows": {
+                            "_": "%d kayıt seçildi",
+                            "0": "",
+                            "1": "1 kayıt seçildi"
+                        }
                     }
                 }
-            }
-        });
+            });
 
-        //Select2 tetiklemesi burada yapıldı
-        $('.selet2').select2({
-            allowClear: true,
-            language: "tr"
+            //Select2 tetiklemesi burada yapıldı
+            $('.selet2').select2({
+                allowClear: true,
+                language: "tr"
+            });
         });
-    });
-</script>
+    </script>
+
+    <script>
+        // The following example creates complex markers to indicate beaches near
+        // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
+        // to the base of the flagpole.
+
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {
+                    lat: -33.9,
+                    lng: 151.2
+                }
+            });
+
+            setMarkers(map);
+        }
+
+        // Data for the markers consisting of a name, a LatLng and a zIndex for the
+        // order in which these markers should display on top of each other.
+        var beaches = [
+            ['Bondi Beach', -33.890542, 151.274856, 4],
+            ['Coogee Beach', -33.923036, 151.259052, 5],
+            ['Cronulla Beach', -34.028249, 151.157507, 3],
+            ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+            ['Maroubra Beach', -33.950198, 151.259302, 1]
+        ];
+
+        function setMarkers(map) {
+            // Adds markers to the map.
+
+            // Marker sizes are expressed as a Size of X,Y where the origin of the image
+            // (0,0) is located in the top left of the image.
+
+            // Origins, anchor positions and coordinates of the marker increase in the X
+            // direction to the right and in the Y direction down.
+            var image = {
+                url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                // This marker is 20 pixels wide by 32 pixels high.
+                size: new google.maps.Size(20, 32),
+                // The origin for this image is (0, 0).
+                origin: new google.maps.Point(0, 0),
+                // The anchor for this image is the base of the flagpole at (0, 32).
+                anchor: new google.maps.Point(0, 32)
+            };
+            // Shapes define the clickable region of the icon. The type defines an HTML
+            // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+            // The final coordinate closes the poly by connecting to the first coordinate.
+            var shape = {
+                coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                type: 'poly'
+            };
+            for (var i = 0; i < beaches.length; i++) {
+                var beach = beaches[i];
+                var marker = new google.maps.Marker({
+                    position: {
+                        lat: beach[1],
+                        lng: beach[2]
+                    },
+                    map: map,
+                    icon: image,
+                    shape: shape,
+                    title: beach[0],
+                    zIndex: beach[3]
+                });
+            }
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm2uL3N7fNZXF7GaFqJTdO-P6DRa6sn0k&callback=initMap">
+    </script>
 
 </body>
+
 </html>
