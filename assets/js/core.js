@@ -5,7 +5,7 @@ $('#sidebarClose').on('click', function () {
 
     if (status.includes('content-fit')) {
 
-        $('#content').attr('class', 'col-md-12 ');
+        $('#content').attr('class', 'col-md-12');
         $('#sidebar').css('left', '-500px');
         $('#sidebarIcon').attr('class', 'fas fa-bars');
     } else {

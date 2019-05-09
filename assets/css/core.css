@@ -35,6 +35,9 @@ body {
 .c-white {
     color: #ffffff;
 }
+.c-white-trans {
+    color: rgba(255, 255, 255, .5);
+}
 
 .c-main {
     color: #002c79;
@@ -48,19 +51,32 @@ body {
     color: #4fc9d9;
 }
 
-.nav-item {
+.menu-link {
     padding: 10px;
-    border-bottom: aliceblue solid 5px;
+
+    /*border-bottom: aliceblue solid 5px;*/
+    /*border-radius: 8px;*/
+    /*transition: 0.5s;*/
+
+}
+.menu-link:hover {
+    background-color: #fff;
     border-radius: 8px;
-    transition: 0.5s;
+}
+.menu-link:hover .nav-link{
+    color: #000 !important;
+
+}
+.menu-link:hover i{
+    color: #000 !important;
 
 }
 
-.nav-item:hover {
-    padding: 10px;
-    border-bottom: 0;
-    transition: 1s;
-}
+/*.active:hover {*/
+    /*padding: 10px;*/
+    /*border-bottom: 0;*/
+    /*transition: 1s;*/
+/*}*/
 
 .side-menu {
     list-style-type: none;
@@ -121,12 +137,7 @@ hr {
 
 .mega-dropdown:hover {
     background-color: #f9f9f9;
-    -webkit-border-top-left-radius: 16px;
-    -webkit-border-top-right-radius: 16px;
-    -moz-border-radius-topleft: 16px;
-    -moz-border-radius-topright: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+border-radius: 8px;
 }
 .mega-dropdown:hover .nav-link{
     color: #0c0c0c !important;
@@ -139,7 +150,7 @@ hr {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-left: -10px;
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .mega-dropdown:hover .mega-dropdown-content {
