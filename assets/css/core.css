@@ -50,14 +50,16 @@ body {
 
 .nav-item {
     padding: 10px;
-    border-bottom: aliceblue solid 1px;
-    transition: 1s;
+    border-bottom: aliceblue solid 5px;
+    border-radius: 8px;
+    transition: 0.5s;
 
 }
 
 .nav-item:hover {
     padding: 10px;
     border-bottom: 0;
+    transition: 1s;
 }
 
 .side-menu {
