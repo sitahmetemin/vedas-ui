@@ -50,6 +50,14 @@ body {
 
 .nav-item {
     padding: 10px;
+    border-bottom: aliceblue solid 1px;
+    transition: 1s;
+
+}
+
+.nav-item:hover {
+    padding: 10px;
+    border-bottom: 0;
 }
 
 .side-menu {
@@ -153,4 +161,17 @@ hr {
 #map {
     width: 100%;
 }
+
+.f-size-12{
+    font-size: 12px;
+}
+
+.f-size-16{
+    font-size: 16px;
+}
+
+.f-size-24{
+    font-size: 24px;
+}
+
 
